@@ -1,38 +1,48 @@
 import add from "./modules/add";
 import subtract from "./modules/subtract";
 import multiply from "./modules/multiply";
-import {addTen, addFive} from "./modules/addNumbers";
-import {subtractOne} from "./modules/subtractNumbers";
+import {addTen, addFive, addOne} from "./modules/addNumbers";
+import {subtractOne, subtractFive, subtractTen} from "./modules/subtractNumbers";
 
 const number1 = 393;
 const number2 = 238;
 
-let answer = add(number1,number2);
-console.log(answer);
+let plus = add(number1,number2);
+console.log(plus);
 
-answer = subtract(number1,number2);
-console.log(answer);
+let sub = subtract(number1,number2);
+console.log(sub);
 
-answer = multiply(number1,number2);
-console.log(answer);
+let mul = multiply(number1,number2);
+console.log(mul);
 
-answer = divide(number1,number2);
-console.log(answer);
 
-answer = addTen(number1);
-console.log(answer);
+////////////
+const divide = (a,b) => {
+  return a / b
+}
+let div = divide(number1,number2);
+console.log(div);
+//////////////
 
-answer = addFive(number1);
-console.log(answer);
 
-answer = addOne(number1);
-console.log(answer);
 
-answer = subtractOne(number1);
-console.log(answer);
 
-answer = subtractFive(number1);
-console.log(answer);
 
-answer = subtractTen(number1);
-console.log(answer);
+let plusTen = addTen(number1);
+console.log(plusTen);
+
+let plusFive = addFive(number1);
+console.log(plusFive);
+
+let plusOne = addOne(number1);
+console.log(plusOne);
+
+let minusOne = subtractOne(number1);
+console.log(minusOne);
+
+let minusFive = subtractFive(number1);
+console.log(minusFive);
+
+let minusTen = subtractTen(number1);
+console.log(minusTen);
